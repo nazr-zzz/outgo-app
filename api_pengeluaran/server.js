@@ -6,7 +6,7 @@ const app = express();
 app.use(cors()); // izinkan akses dari aplikasi mobile
 app.use(express.json()); // baca body berformat JSON
 
-app.get('/', (req, res) => {
+app.get('/api/pengeluaran', (req, res) => {
 res.send('API Pengeluaran berjalan');
 });
 const PORT = 3000;
