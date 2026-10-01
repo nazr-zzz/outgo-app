@@ -7,6 +7,7 @@ import HomeScreen from "./src/screens/home";
 import AddScreen from "./src/screens/add";
 import DetailScreen from "./src/screens/detail";
 import EditScreen from "./src/screens/edit";
+//import Profile from "./screens/profile";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,22 +18,26 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "OUTGO" }}
+          //options={{ title: "OUTGO" }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="Add"
           component={AddScreen}
-          options={{ title: "Tambah Pengeluaran" }}
+          //options={{ title: "Tambah Pengeluaran" }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Detail"
+          name="detail"
           component={DetailScreen}
-          options={{ title: "Detail Pengeluaran" }}
+          //options={{ title: "Detail Pengeluaran" }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Edit"
+          name="edit"
           component={EditScreen}
-          options={{ title: "Ubah Pengeluaran" }}
+          //options={{ title: "Ubah Pengeluaran" }}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
